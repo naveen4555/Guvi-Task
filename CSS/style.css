@@ -1,67 +1,144 @@
-.container{
-    background-image: black;
-    margin-left: 150px;
-    
+.background-radial-gradient {
+  height:100vh;
+  background-color: hsl(208, 42%, 15%);
+  background-image: radial-gradient(
+      650px circle at 0% 0%,
+      hsl(209, 41%, 35%) 15%,
+      hsl(218, 41%, 30%) 35%,
+      hsl(218, 41%, 20%) 75%,
+      hsl(218, 41%, 19%) 80%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1250px circle at 100% 100%,
+      hsl(284, 37%, 31%) 15%,
+      hsl(269, 41%, 30%) 35%,
+      hsl(218, 41%, 20%) 75%,
+      hsl(206, 40%, 19%) 80%,
+      transparent 100%
+    );
 }
-.register_container{
-    
-        background-color: #8BC6EC;
-        background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
-        width: 500px;
-        border-radius: 20px;
-        align-items: center;
-        justify-content: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
-#btn-submit{
-    background-color: #2b28d5; 
-  border: none;
-  color: white;
-  padding: 7px 17px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin-left: 20px;
-  margin-bottom: 10px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-
-.form-group{
-    width: 400px;
-    align-items: center;
-    margin-left: 30px;
-}
-
-.form-signin-heading{
-    margin-left: 10px;
-    font-family: sans-serif;
-    font-weight: 600;
-    color: #2b28d5;
-}
-
-@media screen and (max-width: 300px) {
-    .cancelbtn, .signupbtn {
-      width: 100%;
+@media only screen and (max-width: 600px) {
+    #text{
+        display: none;
     }
-  }
-
-  .background-radial-gradient {
-    height: 100vh;
+    #heading{
+      height: 100px;
+         
+    }
+  .body{
     background-color: hsl(208, 42%, 15%);
-    background-image: radial-gradient(
-        650px circle at 0% 0%,
-        hsl(209, 41%, 35%) 15%,
-        hsl(218, 41%, 30%) 35%,
-        hsl(218, 41%, 20%) 75%,
-        hsl(218, 41%, 19%) 80%,
-        transparent 100%
-      ),
-      radial-gradient(
-        1250px circle at 100% 100%,
-        hsl(284, 37%, 31%) 15%,
-        hsl(269, 41%, 30%) 35%,
-        hsl(218, 41%, 20%) 75%,
-        hsl(206, 40%, 19%) 80%,
-        transparent 100%
-      );
+  }
+  #form-box {
+    height: 63vh;
+}
+/* .form-table {
+    height: 10px;
+    
+} */
+.form-outline {
+    height: 60px;
+}
+}
+
+/* 
+.bg-glass {
+  background-color: hsla(249, 64%, 91%, 0.9) !important;
+  backdrop-filter: saturate(200%) blur(25px);
+}
+.content{
+    margin-bottom: 20px;
+} */
+
+.container {
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: hsl(208, 42%, 15%);
+  background-image: radial-gradient(
+      650px circle at 0% 0%,
+      hsl(209, 41%, 35%) 15%,
+      hsl(218, 41%, 30%) 35%,
+      hsl(218, 41%, 20%) 75%,
+      hsl(218, 41%, 19%) 80%,
+      transparent 100%
+    ),
+    radial-gradient(
+      1250px circle at 100% 100%,
+      hsl(284, 37%, 31%) 15%,
+      hsl(269, 41%, 30%) 35%,
+      hsl(218, 41%, 20%) 75%,
+      hsl(206, 40%, 19%) 80%,
+      transparent 100%
+    );
+  }
+  
+  .card {
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+    width: 400px;
+    height: 450px;
+    background-color: #ffffff;
+    padding: 10px 30px;
+  }
+  
+  .card_title {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .card_title h1 {
+    font-size: 26px;
+    font-weight: bold;
+  }
+  
+  .form input {
+    margin: 10px 0;
+    width: 100%;
+    background-color: #e2e2e2;
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+  }
+  
+  .form button {
+    background-color: #4796ff;
+    color: #ffffff;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    padding: 8px 15px;
+    width: 100%;
+  }
+  
+  .card_terms {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .card_terms input[type="checkbox"] {
+    background-color: #e2e2e2;
+  }
+  
+  .card_terms span {
+    margin: 5px;
+    font-size: 13px;
+  }
+  
+  .card a {
+    color: #4796ff;
+    text-decoration: none;
   }
