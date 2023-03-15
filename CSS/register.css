@@ -1,0 +1,67 @@
+.container{
+    background-image: black;
+    margin-left: 150px;
+    
+}
+.register_container{
+    
+        background-color: #8BC6EC;
+        background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+        width: 500px;
+        border-radius: 20px;
+        align-items: center;
+        justify-content: center;
+}
+
+#btn-submit{
+    background-color: #2b28d5; 
+  border: none;
+  color: white;
+  padding: 7px 17px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.form-group{
+    width: 400px;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.form-signin-heading{
+    margin-left: 10px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #2b28d5;
+}
+
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+      width: 100%;
+    }
+  }
+
+  .background-radial-gradient {
+    height: 100vh;
+    background-color: hsl(208, 42%, 15%);
+    background-image: radial-gradient(
+        650px circle at 0% 0%,
+        hsl(209, 41%, 35%) 15%,
+        hsl(218, 41%, 30%) 35%,
+        hsl(218, 41%, 20%) 75%,
+        hsl(218, 41%, 19%) 80%,
+        transparent 100%
+      ),
+      radial-gradient(
+        1250px circle at 100% 100%,
+        hsl(284, 37%, 31%) 15%,
+        hsl(269, 41%, 30%) 35%,
+        hsl(218, 41%, 20%) 75%,
+        hsl(206, 40%, 19%) 80%,
+        transparent 100%
+      );
+  }
