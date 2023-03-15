@@ -40,3 +40,22 @@ body {
       width: 100%;
     }
   }
+   #but_submit{
+    background-color: rgba(48, 1, 176, 0.831);
+    padding: 2px 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+   }
+   #txt_pwd{
+    border-radius: 10px;
+    margin-top: 10px;
+   }
+   #txt_uname{
+    border-radius: 10px;
+    margin-top: 10px;
+   }
+   h1{
+    color: rgb(0, 27, 66);
+    margin-left: 55px;
+    font-family: sans-serif;
+   }
